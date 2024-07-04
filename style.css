@@ -1,0 +1,170 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,700;1,400;1,500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inconsolata:wdth,wght@125,200..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: url("img.jpg") no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.typing {
+  font-family: "Inconsolata", monospace;
+  color: #04052e;
+  font-size: 18px;
+  font-weight: 500;
+  border-right: 2px solid #01010f;
+  animation: typing 4s steps(23, end) backwards;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.typing:border {
+  margin-left: 0;
+}
+
+.wrapper {
+  width: 400px;
+  color: white;
+  background: transparent;
+  padding: 30px 40px;
+  border-radius: 20px;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(4px);
+}
+h1 {
+  font-size: 36px;
+  font-weight: 700;
+  text-align: center;
+}
+
+/* p {
+  font-size: 16px;
+  font-weight: 400;
+  text-align: center;
+} */
+.input-box {
+  width: 100%;
+  height: 50px;
+  margin: 40px 0;
+  position: relative;
+}
+
+.input-box input {
+  height: 100%;
+  width: 100%;
+  background: transparent;
+  border: none;
+  outline: none;
+  border-radius: 40px;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  padding: 20px 45px 20px 20px;
+  color: white;
+  font-size: 18px;
+}
+
+input::placeholder {
+  color: white;
+  font-size: 18px;
+}
+
+i {
+  font-size: 18px;
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.remember-me {
+  display: flex;
+  justify-content: space-between;
+  margin: -20px 0 10px;
+  color: #04052e;
+}
+
+.remember-me label input {
+  accent-color: #3e92cc;
+  margin-right: 10px;
+}
+
+.remember-me a {
+  color: #04052e;
+  text-decoration: none;
+}
+
+.remember-me a:hover {
+  text-decoration: underline;
+}
+
+.btn {
+  width: 100%;
+  height: 45px;
+  background: #fff;
+  border: none;
+  outline: none;
+  border-radius: 40px;
+  box-shadow: 0 0 10px (0, 0, 0, 0.1);
+  font-size: 16px;
+  cursor: pointer;
+  font-weight: 600;
+  color: #333;
+}
+
+.register p {
+  font-size: 15px;
+  text-align: center;
+  margin: 20px 0 15px;
+}
+
+.register a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.register a:hover {
+  text-decoration: underline;
+}
+
+/* typewriter testing
+.typewriter-text {
+  overflow: hidden; Ensures the text is not revealed until the animation
+  border-right: 0.15em solid orange;  The typewriter cursor 
+  white-space: nowrap; /* Keeps the content on a single line 
+  margin: 0 auto; /* Gives that typewriter effect 
+  letter-spacing: 0.15em; /* Adjust as needed *
+  animation: typing 10s steps(15), blink-caret 0.75s step-end infinite;
+ } */
+
+@keyframes typing {
+  0% {
+    width: 0;
+  }
+  50% {
+    width: 100%;
+  }
+}
+
+/* The typewriter cursor effect */
+/* @keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: orange;
+  }
+} */
+
+.typing {
+}
